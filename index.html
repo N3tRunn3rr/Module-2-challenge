@@ -7,85 +7,46 @@
     <title>Kenji Fleming</title>
     <link rel="stylesheet" href="./style.css"/>
 </head>
-
 <body> 
-    <!-- main logo / nav  -->
-    <header>
-        <h1>Kenji Fleming</h1>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact Me</a>
-            <a href="#">Resume</a> 
-            <!-- will add resume when I update it and make it webpage ready-->
+    <header class="header-container">
+        <div class="header-title">
+            <h1 class="header__title">Kenji Fleming</h1>
+        </div>
+        <nav class="nav-container">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="./about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="./contact.html" class="nav__link">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    
-    <section class="section-1">
-        <div>
-            <h2>Welcome to my page!</h2>
-        </div>
-    </section>
-
-    <main class="page-wrapper">
-        <!-- about me -->
-        <section class="page-section" id="about">
-            <h2>About Me</h2>
-            <div>
-                <p>My name is Kenji Fleming and I was born and raised in Orlando, FL. I have my bacherlors in Economics from UCF and am currently working on my web-developoment course through UCF.</p>
-                <p>My hobbies include playing video games, watching sports and F1, and working out. I hope to land a software engineer job at Disney once I finish this course. As I complete this course and expand my portfolio I will be coming back to update this webpage with my current portfolio as well as update the webpage to reflect my current skills.</p>
-            </div>
+    <br>
+    <div class="main-content">
+        <section class="about-section">
+            <h2 class="main-content__title">Welcome to my portfolio</h2>
+            <p class="main-content__text">Hello! My name is Kenji. I graduated from UCF's full-stack coding bootcamp and am now starting a website building business with my friend and business partner Branden Wheat. We can make wordpress websites with custom themes or build you one from scratch! Please look through our portfolio and see if there is anything you like!</p>
         </section>
-
         <br>
-        <!-- put portfolio here -->
-        <section class="page-section" id="work">
-            <h2>Work</h2>
-            <div class="flex-container">
-                <a href="https://www.pexels.com/photo/orange-tabby-cat-lying-on-black-wooden-table-13442289/" class="flex-item surf-report">
-                    <!-- im going to add these files and extensions later on once i've built them -->
-                    <div>
-                        <h3>Surf Report</h3>
-                        <span>MERN Stack</span>
-                    </div>
-                </a>
-                <a href="https://www.pexels.com/photo/brown-cookies-with-different-designs-5583535/" class="flex-item calc">
-                    <div>
-                        <h3>Calculator</h3>
-                        <span>React/JavaScript/CSS</span>
-                    </div>
-                </a>
-
-                <a href="https://www.pexels.com/photo/autumn-trees-on-a-forest-10075042/" class="flex-item led-wall">
-                    <div>
-                        <h3>Pastel Puzzles</h3>
-                        <span>MERN Stack</span>
-                    </div>
-                </a>
-
-                <a href="https://www.pexels.com/photo/mountain-goat-on-rocks-13761592/" class="flex-item run-buddy">
-                    <div>
-                        <h3>Run Buddy</h3>
-                        <span>HTML/CSS</span>
-                    </div>
-                </a>
+        <section class="portfolio-section">
+            <h2>My portfolio</h2>
+            <div class="my-portfolio">
+                <div class="portfolio-item">
+                    <img src="./images/wordpress.jpg" alt="wordpress" class="portfolio-item__img">
+                    <h3 class="portfolio-item__title">Wordpress</h3>
+                    <p class="portfolio-item__text">We can make you a custom wordpress website with a custom theme!</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./images/html.jpg" alt="html" class="portfolio-item__img">
+                    <h3 class="portfolio-item__title">HTML</h3>
+                    <p class="portfolio-item__text">We can make you a website from scratch using HTML!</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./images/css.jpg" alt="css" class="portfolio-item__img">
+                    <h3 class="portfolio-item__title">CSS</h3>
+                    <p class="portfolio-item__text">We can style your website using CSS!</p>
+                </div>
             </div>
         </section>
-
-        <br>
-        <!-- contact info -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div>
-                <address>
-                    <a href="tel:+5555555555">555.555.5555</a>
-                    <!-- im not gonna put my actual number here until I have a work line -->
-                    <a href=mailto:kwf1999@gmail.com>Email</a>
-                    <a href="https://github.com/N3tRunn3rr/Module-2-challenge.git">Github</a>
-                </address>
-            </div>
-        </section>
-    </main>
-    
+    </div>
 </body>
 </html>
